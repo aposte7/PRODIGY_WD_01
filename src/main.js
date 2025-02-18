@@ -1,12 +1,10 @@
 import './style.css'
-import { setupCounter } from './counter.js'
+import HomePage from './Pages/HomePage.js'
 
 document.querySelector('#app').innerHTML = `
-  <div class="main-body">
-    <header id="counter">
+  <div id="main_body">
     
-    </header>
   </div>
 `
 
-setupCounter(document.querySelector('#counter'))
+HomePage('#main_body')
