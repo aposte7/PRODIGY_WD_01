@@ -11,8 +11,19 @@ function NavBar(parent) {
 
 	linkParent(parent, elm)
 
-	const selectedElm = document.querySelectorAll('.nav_item')
-	console.log(selectedElm)
+	document.addEventListener('DOMContentLoaded', () => {
+		const navItems = document.querySelectorAll('.nav_item')
+
+		navItems.forEach((item) => {
+			item.addEventListener('click', function () {
+				// Remove 'nav_active' from all items
+				navItems.forEach((nav) => nav.classList.remove('nav_active'))
+
+				// Add 'nav_active' to the clicked item
+				this.classList.add('nav_active')
+			})
+		})
+	})
 }
 
 function liElm(value, to = '#') {
