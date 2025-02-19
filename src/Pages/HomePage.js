@@ -2,6 +2,7 @@ import { linkParent } from '../helper'
 import Header from './Header'
 import Service from './Service'
 import Showcase from './Showcase'
+import Testimony from './Testimony'
 
 function HomePage(parent) {
 	const elm = `
@@ -11,6 +12,7 @@ function HomePage(parent) {
     <main class="main">
         <section class="showcase"></section>
         <section class="service"></section>
+        <section class="testimony"></section>
     </main>
     
     </div>
@@ -24,6 +26,7 @@ function HomePage(parent) {
 	Header('.header')
 	Showcase('.showcase')
 	Service('.service')
+	Testimony('.testimony')
 
 	// Render the NavBar inside the #nav_container
 }

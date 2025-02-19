@@ -37,6 +37,8 @@ button {
 img {
 	width: 100%;
 	height: 100%;
+	object-position: center center;
+	object-fit: contain;
 }
 
 span {
@@ -414,4 +416,81 @@ body {
 	width: fit-content;
 	margin-inline: auto;
 	padding-block-end: 3rem;
+}
+
+.testimony {
+	padding-block: 6rem;
+}
+.testimony_text {
+	text-align: center;
+}
+.testimony_text > * {
+	padding-block: 3rem;
+}
+
+.testimony_text-header {
+	font-size: 4.2rem;
+	color: var(--color-white);
+}
+.testimony_text-description {
+	text-align: center;
+	font-size: 1.93rem;
+	line-height: 1.4;
+}
+
+.testimony_content {
+	width: 80%;
+	margin-inline: auto;
+}
+
+.testimony_wrapper {
+	padding-block: 8rem;
+}
+
+.testimony_box {
+	width: 43rem;
+	height: 35rem;
+	padding: 3rem 3.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+	border-radius: 20px;
+	background-color: #a87272;
+}
+
+.testimony_logo {
+	width: 16rem;
+	inset: 0;
+	transform: translateY(-5px);
+}
+
+.testimony_message {
+	font-size: 1.7rem;
+	line-height: 1.25;
+	padding-top: 1rem;
+	height: 15rem;
+}
+
+.testimony_image {
+	padding-top: 1rem;
+
+	display: flex;
+	align-items: center;
+}
+
+.testimony_image_wrapper {
+	width: 6rem;
+	height: 6rem;
+	background-color: #fff;
+	border-radius: 12px;
+}
+
+.testifier > * {
+	padding: 0.4rem 1.5rem;
+}
+.testifier_name {
+	font-size: 1.7rem;
+	color: var(--color-white);
+	font-weight: 500;
 }

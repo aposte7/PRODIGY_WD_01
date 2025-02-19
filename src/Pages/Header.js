@@ -1,6 +1,5 @@
 import NavBar from '../components/NavBar'
 import { linkParent } from '../helper'
-import logo from '../assets/images/logo.svg'
 
 function Header(parent) {
 	const numSupporters = 13
@@ -9,7 +8,7 @@ function Header(parent) {
 	const elm = `
         <div class="nav_bar">
             <a href="#" class="nav_logo">
-                <img src="${logo}" alt="Logo">
+                <img src="src/assets/icons/logo.svg" alt="Logo">
             </a>
 
             <div id="nav_container"></div>
@@ -53,7 +52,7 @@ function Header(parent) {
                     
                     data-image-index="${i + 1}" 
                     class="supporter_img-container">
-                        <img class="supporter_img" src="/src/assets/images/s-${
+                        <img class="supporter_img" src="/src/assets/icons/s-${
 							i + 1
 						}.svg" alt="" />
                     </div>
