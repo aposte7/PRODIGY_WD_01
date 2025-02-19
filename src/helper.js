@@ -45,6 +45,7 @@ export function linkParent(parent, childHTML, method = 'innerHTML') {
 			message: `HTML inserted successfully using method: ${method}`,
 		}
 	} catch (err) {
+		console.log(`error occurred while adding children to ${parent}`)
 		return {
 			...condition,
 			status: 'error',

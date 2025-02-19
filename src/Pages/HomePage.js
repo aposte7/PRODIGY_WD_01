@@ -1,11 +1,18 @@
 import { linkParent } from '../helper'
 import Header from './Header'
+import Showcase from './Showcase'
 
 function HomePage(parent) {
 	const elm = `
-    <header class="header">
-        
-    </header>
+    <div>
+        <header class="header"></header>
+
+    <main class="main">
+        <section class="showcase"></section>
+        <section class="service"></section>
+    </main>
+    
+    </div>
 
   `
 
@@ -13,6 +20,7 @@ function HomePage(parent) {
 	linkParent(parent, elm)
 
 	Header('.header')
+	Showcase('.showcase')
 	// Render the NavBar inside the #nav_container
 }
 

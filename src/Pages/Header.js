@@ -7,7 +7,6 @@ function Header(parent) {
 	const delayDivision = 60 / numSupporters
 
 	const elm = `
-    <div>
         <div class="nav_bar">
             <a href="#" class="nav_logo">
                 <img src="${logo}" alt="Logo">
@@ -19,7 +18,7 @@ function Header(parent) {
         </div>
 
         <div class="hero_wrapper">
-             <div class="hero">
+            <div class="hero">
                 <div class="hero_text">
                     <h1 class="hero_text-main">
                         Your Design Token Engine
@@ -37,8 +36,7 @@ function Header(parent) {
 
                 <div class="hero_video-wrapper">
                     <video autoplay loop class="hero_video">
-                        <source loop src="src/assets/hero_video.mp4" type="video/mp4">
-                  
+                        <source src="/src/assets/hero_video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -46,7 +44,7 @@ function Header(parent) {
         </div>
         <div class="supporter">
             <div class="supporter_wrapper">
-               <p class="supporter_text">Specified by Love</p>
+            <p class="supporter_text">Specified by Love</p>
             
             ${Array.from(
 				{ length: numSupporters },
@@ -64,8 +62,7 @@ function Header(parent) {
 
             </div>
         </div>
-    </div>
-    `
+`
 	linkParent(parent, elm)
 	NavBar('#nav_container')
 }
