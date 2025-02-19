@@ -1,5 +1,6 @@
 import { linkParent } from '../helper'
 import Header from './Header'
+import Service from './Service'
 import Showcase from './Showcase'
 
 function HomePage(parent) {
@@ -17,10 +18,13 @@ function HomePage(parent) {
   `
 
 	// Insert the HTML into the parent element
+
 	linkParent(parent, elm)
 
 	Header('.header')
 	Showcase('.showcase')
+	Service('.service')
+
 	// Render the NavBar inside the #nav_container
 }
 
