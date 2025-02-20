@@ -1,4 +1,5 @@
 import { linkParent } from '../helper'
+import Footer from './Footer'
 import Header from './Header'
 import Service from './Service'
 import Showcase from './Showcase'
@@ -14,7 +15,9 @@ function HomePage(parent) {
         <section class="service"></section>
         <section class="testimony"></section>
     </main>
-    
+
+    <footer class="footer"></footer>
+
     </div>
 
   `
@@ -27,6 +30,7 @@ function HomePage(parent) {
 	Showcase('.showcase')
 	Service('.service')
 	Testimony('.testimony')
+	Footer('.footer')
 
 	// Render the NavBar inside the #nav_container
 }
