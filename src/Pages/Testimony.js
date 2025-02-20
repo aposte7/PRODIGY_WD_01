@@ -54,7 +54,10 @@ function Testimony(parent) {
         </p>
         </div>
         <div class="testimony_wrapper">
-            ${users.map((user, index) => Card(user, index)).join('')}    
+           <div class="testimony_box-list">
+		 		 ${users.map((user, index) => Card(user, index)).join('')}  
+		   </div>
+			  
         </div>
     </div>
     `
@@ -70,10 +73,11 @@ function Card(user, index) {
         <div style="animation-delay: -${
 			delayDivision * index + 1
 		}s"  class="testimony_box">
-            <div class="testimony_logo">
-                <img src="/src/assets/icons/s-${
-					index + 1
-				}.svg" alt="companies logo" />
+            
+			<div class="testimony_logo">
+                <div class="logo">
+					<img src="/src/assets/icons/s-${index + 1}.svg" alt="companies logo" />
+				</div>
             </div>
 
             <p class="testimony_message">

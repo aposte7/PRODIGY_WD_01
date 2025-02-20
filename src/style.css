@@ -6,6 +6,8 @@
 	--color-on-surface-1: rgb(208, 209, 209);
 	--color-on-surface-2: rgb(173, 171, 201);
 
+	--color-white-opacity: rgb(255, 255, 255, 0.2);
+
 	--color-dark: rgb(21, 23, 24);
 
 	--color-white: rgb(255, 255, 255);
@@ -139,6 +141,8 @@ body {
 
 .hero_video-wrapper {
 	padding-block: 7rem;
+	max-width: 110rem;
+	margin-inline: auto;
 }
 .hero_video {
 	mask-image: linear-gradient(
@@ -439,17 +443,45 @@ body {
 }
 
 .testimony_content {
-	width: 80%;
+	width: 90%;
 	margin-inline: auto;
 }
 
 .testimony_wrapper {
 	position: relative;
 	padding-block: 8rem;
-	background-color: chartreuse;
+	background-color: var(--color-alpha-2);
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+
+	mask-image: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0.1),
+		rgba(0, 0, 0, 0.5) 10%,
+		rgba(0, 0, 0, 1) 35%,
+		rgba(0, 0, 0, 1) 55%,
+		rgba(0, 0, 0, 0.5) 85%,
+		rgba(0, 0, 0, 0.1)
+	);
+	/* mask-image: ; */
+	mask-composite: intersect;
 	height: 50rem;
 	position: relative;
 	overflow: hidden;
+}
+
+.testimony_box-list {
+	background-color: var(--color-alpha-2);
+	height: 35rem;
+	width: 100%;
+
+	mask-image: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 1) 10%,
+		rgba(255, 255, 255, 1) 90%,
+		rgba(255, 255, 255, 0)
+	);
 }
 
 .testimony_box {
@@ -463,12 +495,12 @@ body {
 	justify-content: space-between;
 	align-items: start;
 	border-radius: 20px;
-	background-color: #a87272;
+	color: var(--color-white);
+	background-color: var(--color-white-opacity);
 
 	transform: translateX(calc(43rem * 6));
 	backface-visibility: hidden;
 
-	/* Animation */
 	animation: scroll_left_testimony 60s linear infinite;
 }
 
@@ -479,7 +511,29 @@ body {
 }
 
 .testimony_logo {
-	width: 16rem;
+	flex: none;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	width: 200px;
+}
+
+.logo {
+	position: absolute;
+	border-radius: inherit;
+	inset: 0px;
+	left: -1rem;
+	transform: scale(2);
+}
+
+.testimony_logo img {
+	aspect-ratio: 5/1;
+	display: block;
+	width: fit-content;
+	height: fit-content;
+	border-radius: inherit;
+	object-position: center center;
+	object-fit: contain;
 }
 
 .testimony_message {
