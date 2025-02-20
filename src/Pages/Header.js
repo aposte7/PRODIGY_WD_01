@@ -8,7 +8,7 @@ function Header(parent) {
 	const elm = `
         <div class="nav_bar">
             <a href="#" class="nav_logo">
-                <img src="src/assets/icons/logo.svg" alt="Logo">
+                <img src="/src/assets/icons/logo.svg" alt="Logo">
             </a>
 
             <div id="nav_container"></div>

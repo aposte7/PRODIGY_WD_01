@@ -444,10 +444,17 @@ body {
 }
 
 .testimony_wrapper {
+	position: relative;
 	padding-block: 8rem;
+	background-color: chartreuse;
+	height: 50rem;
+	position: relative;
+	overflow: hidden;
 }
 
 .testimony_box {
+	position: absolute;
+	left: 0;
 	width: 43rem;
 	height: 35rem;
 	padding: 3rem 3.5rem;
@@ -457,12 +464,22 @@ body {
 	align-items: start;
 	border-radius: 20px;
 	background-color: #a87272;
+
+	transform: translateX(calc(43rem * 6));
+	backface-visibility: hidden;
+
+	/* Animation */
+	animation: scroll_left_testimony 60s linear infinite;
+}
+
+@keyframes scroll_left_testimony {
+	to {
+		transform: translateX(-43rem);
+	}
 }
 
 .testimony_logo {
 	width: 16rem;
-	inset: 0;
-	transform: translateY(-5px);
 }
 
 .testimony_message {
@@ -474,9 +491,9 @@ body {
 
 .testimony_image {
 	padding-top: 1rem;
-
 	display: flex;
 	align-items: center;
+	border-radius: inherit;
 }
 
 .testimony_image_wrapper {
@@ -484,6 +501,7 @@ body {
 	height: 6rem;
 	background-color: #fff;
 	border-radius: 12px;
+	overflow: hidden;
 }
 
 .testifier > * {
