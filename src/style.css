@@ -101,7 +101,7 @@ body {
 .nav_item:hover:not(.nav_active)::after {
 	position: absolute;
 	content: '';
-	bottom: -10.5px;
+	bottom: -14.5px;
 	left: 0;
 	width: 100%;
 	height: 0.8px;
@@ -115,7 +115,7 @@ body {
 .nav_item::after {
 	content: '';
 	position: absolute;
-	bottom: -10.5px;
+	bottom: -14.5px;
 	left: 0;
 	width: 0;
 	height: 0.8px;
@@ -178,6 +178,7 @@ body {
 	width: fit-content;
 	margin-inline: auto;
 	padding-block: 20px;
+	text-align: center;
 	background-image: linear-gradient(
 		to right,
 		var(--color-white),
@@ -356,7 +357,7 @@ body {
 }
 
 .service_item {
-	width: 35rem;
+	width: 32rem;
 }
 .service_item h4 {
 	font-size: 1.8rem;
@@ -406,6 +407,18 @@ body {
 	padding: 1.3rem 2rem;
 	color: var(--color-dark);
 	background-color: var(--color-white);
+}
+.btn {
+	transition: all 0.4s;
+}
+
+.btn-link:hover,
+.nav_link-btn:hover {
+	box-shadow: inset 0 0 15px 1px var(--color-white-opacity);
+}
+.service_btn .btn:hover {
+	background-color: transparent;
+	color: var(--color-white);
 }
 
 .btn {
@@ -573,7 +586,7 @@ body {
 /** FOOTER **/
 
 .footer {
-	padding-block: 8rem 1rem;
+	padding-block: 20rem 5rem;
 	font-family: Arial, sans-serif;
 	width: 80%;
 	margin-inline: auto;
@@ -639,7 +652,129 @@ body {
 	display: none;
 }
 
+.flex {
+	display: flex;
+}
+
+.service_image-2 {
+	position: relative;
+	flex-direction: column;
+	width: 100%;
+	overflow: hidden;
+	gap: 1rem;
+	height: 23.5rem;
+}
+.service_image-2 .service_tag:nth-child(n) {
+	display: flex;
+	gap: 2rem;
+	width: max-content;
+	animation: scroll linear infinite;
+	animation-duration: var(--t);
+	padding: 1rem 0;
+}
+
+.service_image-2 .service_tag:nth-child(2) {
+	animation: scroll-revers var(--t) linear infinite;
+
+	animation-delay: calc(var(--t) * -1);
+}
+.service_tag_item {
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: fit-content;
+	height: fit-content;
+	padding: 0.7rem 1rem;
+	box-shadow: inset 0px 0px 1px 1.5px var(--color-white-opacity);
+	border-radius: 5px;
+	flex-shrink: 0; /* Prevent items from shrinking */
+	animation: item-pulse 3s ease-in-out infinite;
+}
+
+.service_tag_item img {
+	width: 2.5rem;
+	border-radius: 5px;
+}
+.service_tag_item p {
+	break-after: avoid;
+}
+
+.service_tag {
+	will-change: transform;
+}
+
+.service_tag_item {
+	backface-visibility: hidden;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+@keyframes scroll-revers {
+	0% {
+		transform: translateX(-50%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@media (max-width: 1300px) {
+	.service_wrapper {
+		flex-direction: column;
+	}
+	.service_box {
+		width: 60rem;
+	}
+	.service_item h4 {
+		font-size: 1.8rem;
+	}
+	.service_item p {
+		font-size: 1.69rem;
+	}
+}
+
+@media (max-width: 1150px) {
+	.showcase_container {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+	.showcase_detail {
+		align-self: center;
+	}
+
+	.service_item h4 {
+		font-size: 1.6rem;
+	}
+	.service_item p {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 891px) {
+	.service_item {
+		width: 100%;
+	}
+	.service_item h4 {
+		font-size: 1.8rem;
+	}
+	.service_item p {
+		font-size: 1.69rem;
+	}
+}
+
 @media (max-width: 850px) {
+	html {
+		font-size: 55%;
+	}
+	.showcase_detail {
+		width: 85vw;
+	}
 	.nav_link-btn {
 		font-size: 1.6rem;
 		padding: 0.7rem 0.8rem;
@@ -740,22 +875,44 @@ body {
 		align-items: flex-start;
 		gap: 3rem;
 	}
+	.hero_text-main {
+		font-size: 5rem;
+	}
+
+	.showcase_text-header,
+	.service_text-header,
+	.testimony_text-header {
+		font-size: 4rem;
+	}
 }
 
-@media (max-width: 1150px) {
-	.showcase_container {
-		flex-direction: column-reverse;
-		align-items: flex-start;
-	}
-	.showcase_detail {
-		align-self: center;
-	}
-}
-@media (max-width: 1300px) {
-	.service_wrapper {
-		flex-direction: column;
-	}
+@media (max-width: 684px) {
 	.service_box {
-		width: 60rem;
+		width: 78vw;
+	}
+
+	.footer {
+		width: 100%;
+	}
+
+	.footer-section h3 {
+		font-size: 1.6rem;
+	}
+	.footer-section ul li a {
+		font-size: 1.4rem;
+	}
+	.footer-content {
+		flex-wrap: wrap;
+	}
+	.showcase_text-header,
+	.service_text-header,
+	.testimony_text-header {
+		font-size: 3rem;
+	}
+	.service_box-header {
+		font-size: 2.5rem;
+	}
+	.service_box-description {
+		font-size: 1.6rem;
 	}
 }

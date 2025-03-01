@@ -42,23 +42,116 @@ function Service(parent) {
                     <img src="assets/images/service_box_1.jpg" alt="" />
                 </div>
             </div>
+
             <div class="service_box">
                 <div class="service_box-wrapper">
                     <h2 class="service_box-header">
-                    Sync your tokens
+                    Customize outputs
                     </h2>
 
                     <p class="service_box-description">
-                        Specify is natively compatible with Figma, GitHub, Notion, Raycast, and many more to come. Our REST API and CLI help you to connect even more. 
+                        Specify’s open source parsers help you generate design tokens and assets that match your company standards. 
                     </p>
 
                     <div class="service_btn">
-                        <a href="#" class="btn btn-link">Discover all available apps -> </a>
+                        <a href="#" class="btn btn-link">Discover all parsers -> </a>
                     </div>
                 </div>
 
-                <div class="service_image">
-                    <img src="assets/images/service_box_1.jpg" alt="" />
+                <div class="service_image service_image-2 flex">
+                    <ul style="--t:30s" class="service_tag flex">
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_1.svg" alt="" />
+                            <p>to-css-custom-properties</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_2.svg" alt="" />
+                            <p>to-flutter</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_3.svg" alt="" />
+                            <p>replace-string</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_1.svg" alt="" />
+                            <p>to-css-custom-properties</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_2.svg" alt="" />
+                            <p>to-flutter</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_3.svg" alt="" />
+                            <p>replace-string</p>
+                        </li>
+
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_2.svg" alt="" />
+                            <p>to-flutter</p>
+                        </li>
+                    </ul>
+                    <ul style="--t:20s" class="service_tag flex">
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_1.svg" alt="" />
+                            <p>to-css-custom-properties</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_2.svg" alt="" />
+                            <p>to-flutter</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_3.svg" alt="" />
+                            <p>replace-string</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_1.svg" alt="" />
+                            <p>to-css-custom-properties</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_2.svg" alt="" />
+                            <p>to-flutter</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_3.svg" alt="" />
+                            <p>replace-string</p>
+                        </li>
+
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_2.svg" alt="" />
+                            <p>to-flutter</p>
+                        </li>
+                    </ul>
+                    <ul style="--t:20s" class="service_tag flex">
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_1.svg" alt="" />
+                            <p>to-css-custom-properties</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_2.svg" alt="" />
+                            <p>to-flutter</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_3.svg" alt="" />
+                            <p>replace-string</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_1.svg" alt="" />
+                            <p>to-css-custom-properties</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_2.svg" alt="" />
+                            <p>to-flutter</p>
+                        </li>
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_3.svg" alt="" />
+                            <p>replace-string</p>
+                        </li>
+
+                        <li class="flex service_tag_item">
+                            <img height="5" width="5" src="assets/outputs/out_2.svg" alt="" />
+                            <p>to-flutter</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
