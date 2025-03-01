@@ -5,37 +5,37 @@ function Testimony(parent) {
 		{
 			name: 'Roy Vab Rooijen',
 			role: 'Graphics Designer',
-			imgUrl: '/src/assets/users/u_1.jpg',
+			imgUrl: 'src/assets/users/u_1.jpg',
 			message: `The automation from design to code with Specify is incredibly powerful. The ability to reference the same tokens and assets in Figma — and in our codebase — saves us an incredible amount of time, while reducing manual, error-prone work.`,
 		},
 		{
 			name: 'Jane Doe',
 			role: 'UI/UX Designer',
-			imgUrl: '/src/assets/users/u_2.jpg',
+			imgUrl: 'src/assets/users/u_2.jpg',
 			message: `Specify is the missing link between our design and engineering teams. It definitely helped us integrate design tokens in an automated way very quickly and seamlessly into our codebase.`,
 		},
 		{
 			name: 'John Smith',
 			role: 'Frontend Developer',
-			imgUrl: '/src/assets/users/u_3.jpg',
+			imgUrl: 'src/assets/users/u_3.jpg',
 			message: `We sync our design tokens and icons to our tools with Specify, and it gives our design and engineering teams peace of mind!`,
 		},
 		{
 			name: 'Alice Johnson',
 			role: 'Product Manager',
-			imgUrl: '/src/assets/users/u_4.jpg',
+			imgUrl: 'src/assets/users/u_4.jpg',
 			message: `The automation from design to code with Specify is incredibly powerful. The ability to reference the same tokens and assets in Figma — and in our codebase — saves us an incredible amount of time, while reducing manual, error-prone work.`,
 		},
 		{
 			name: 'Bob Brown',
 			role: 'Backend Developer',
-			imgUrl: '/src/assets/users/u_5.jpg',
+			imgUrl: 'src/assets/users/u_5.jpg',
 			message: `Specify helps our designers keep their assets and design decisions in sync with the actual code, avoiding extra development effort and making design implementation much more flexible.`,
 		},
 		{
 			name: 'Charlie Davis',
 			role: 'Full Stack Developer',
-			imgUrl: '/src/assets/users/u_3.jpg',
+			imgUrl: 'src/assets/users/u_3.jpg',
 			message: `Specify is the perfect addition to our front-end boilerplate. Tokens, assets, fonts: everything comes straight out from Figma. Less configuration, more creative development. Our team loves it!`,
 		},
 	]
@@ -76,7 +76,7 @@ function Card(user, index) {
             
 			<div class="testimony_logo">
                 <div class="logo">
-					<img src="/src/assets/icons/s-${index + 1}.svg" alt="companies logo" />
+					<img src="src/assets/icons/s-${index + 1}.svg" alt="companies logo" />
 				</div>
             </div>
 
