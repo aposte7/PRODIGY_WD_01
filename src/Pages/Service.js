@@ -39,7 +39,7 @@ function Service(parent) {
                 </div>
 
                 <div class="service_image">
-                    <img src="src/assets/images/service_box_1.jpg" alt="" />
+                    <img src="./assets/images/service_box_1.jpg" alt="" />
                 </div>
             </div>
             <div class="service_box">
@@ -58,7 +58,7 @@ function Service(parent) {
                 </div>
 
                 <div class="service_image">
-                    <img src="src/assets/images/service_box_1.jpg" alt="" />
+                    <img src="./assets/images/service_box_1.jpg" alt="" />
                 </div>
             </div>
         </div>

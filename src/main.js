@@ -8,3 +8,5 @@ document.querySelector('#app').innerHTML = `
 `
 
 HomePage('#page')
+
+// src/main.js

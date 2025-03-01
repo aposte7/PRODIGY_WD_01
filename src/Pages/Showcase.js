@@ -51,7 +51,7 @@ function Showcase(parent) {
 				<div class="showcase_detail">
 					<div class="showcase_detail-video">
 						<video autoplay loop muted>
-							<source src="src/assets/showcase.mp4" type="video/mp4">
+							<source src="./assets/showcase.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
 					</div>
