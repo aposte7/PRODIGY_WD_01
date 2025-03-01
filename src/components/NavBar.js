@@ -3,10 +3,10 @@ import { linkParent } from '../helper'
 function NavBar(parent) {
 	const elm = ` 
 		<div class="nav_list">
-			${liElm('Home')}
-			${liElm('Solution')}
-			${liElm('Resource')}
-			${liElm('About')}
+			${liElm('Home', '#')}
+			${liElm('Solution', '#solution')}
+			${liElm('Service', '#service')}
+			${liElm('About', '#about')}
 		</div>`
 
 	linkParent(parent, elm)

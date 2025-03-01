@@ -11,12 +11,12 @@ function HomePage(parent) {
         <header class="header"></header>
 
     <main class="main">
-        <section class="showcase"></section>
-        <section class="service"></section>
+        <section class="showcase" id="solution"></section>
+        <section class="service" id="service"></section>
         <section class="testimony"></section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer" id="about"></footer>
 
     </div>
 
