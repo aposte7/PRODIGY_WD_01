@@ -8,7 +8,7 @@ function Header(parent) {
 	const elm = `
         <div class="nav_bar">
             <a href="#" class="nav_logo">
-                <img  src="./assets/icons/logo.svg" alt="Logo">
+                <img  src="assets/icons/logo.svg" alt="Logo">
             </a>
 
             <div id="nav_container"></div>
@@ -35,7 +35,7 @@ function Header(parent) {
 
                 <div class="hero_video-wrapper">
                     <video autoplay loop muted class="hero_video">
-                        <source src="./assets/hero_video.mp4" type="video/mp4">
+                        <source src="assets/hero_video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -52,7 +52,7 @@ function Header(parent) {
                     
                     data-image-index="${i + 1}" 
                     class="supporter_img-container">
-                        <img class="supporter_img" src="./assets/icons/s-${
+                        <img class="supporter_img" src="assets/icons/s-${
 							i + 1
 						}.svg" alt="" />
                     </div>
