@@ -1,4 +1,4 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))o(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function a(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(s){if(s.ep)return;s.ep=!0;const t=a(s);fetch(s.href,t)}})();function r(e,i,a="innerHTML"){const o=typeof e=="string"?document.querySelector(e):e,s={innerHTML:()=>o.innerHTML=i,append:()=>o.insertAdjacentHTML("beforeend",i),prepend:()=>o.insertAdjacentHTML("afterbegin",i),before:()=>o.insertAdjacentHTML("beforebegin",i),after:()=>o.insertAdjacentHTML("afterend",i)};let t={status:"not-started",message:""};if(!o)return{...t,status:"error",message:"Parent element not found"};try{if(!s[a])throw new Error("Invalid method specified");return s[a](),{...t,status:"completed",message:`HTML inserted successfully using method: ${a}`}}catch(n){return console.log(`error occurred while adding children to ${e}`),{...t,status:"error",message:n.message||"Failed to insert HTML"}}}function l(e){r(e,`    
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))o(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&o(r)}).observe(document,{childList:!0,subtree:!0});function a(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(s){if(s.ep)return;s.ep=!0;const t=a(s);fetch(s.href,t)}})();function n(e,i,a="innerHTML"){const o=typeof e=="string"?document.querySelector(e):e,s={innerHTML:()=>o.innerHTML=i,append:()=>o.insertAdjacentHTML("beforeend",i),prepend:()=>o.insertAdjacentHTML("afterbegin",i),before:()=>o.insertAdjacentHTML("beforebegin",i),after:()=>o.insertAdjacentHTML("afterend",i)};let t={status:"not-started",message:""};if(!o)return{...t,status:"error",message:"Parent element not found"};try{if(!s[a])throw new Error("Invalid method specified");return s[a](),{...t,status:"completed",message:`HTML inserted successfully using method: ${a}`}}catch(r){return console.log(`error occurred while adding children to ${e}`),{...t,status:"error",message:r.message||"Failed to insert HTML"}}}function l(e){n(e,`    
     <div>
         <div class="footer-content">
             <div class="footer-section">
@@ -53,7 +53,7 @@
 			${c("Solution")}
 			${c("Resource")}
 			${c("About")}
-		</div>`;r(e,i),document.addEventListener("DOMContentLoaded",()=>{const a=document.querySelectorAll(".nav_item");a.forEach(o=>{o.addEventListener("click",function(){a.forEach(s=>s.classList.remove("nav_active")),this.classList.add("nav_active")})})})}function c(e,i="#"){return`
+		</div>`;n(e,i),document.addEventListener("DOMContentLoaded",()=>{const a=document.querySelectorAll(".nav_item");a.forEach(o=>{o.addEventListener("click",function(){a.forEach(s=>s.classList.remove("nav_active")),this.classList.add("nav_active")})})})}function c(e,i="#"){return`
 	<div class="nav_item">
 		<a class="nav_link" href=${i}>
 			${e}
@@ -61,7 +61,7 @@
 	</div>`}function u(e){const a=4.615384615384615,o=`
         <div class="nav_bar">
             <a href="#" class="nav_logo">
-                <img src="./src/assets/icons/logo.svg" alt="Logo">
+                <img  src="./assets/icons/logo.svg" alt="Logo">
             </a>
 
             <div id="nav_container"></div>
@@ -88,7 +88,7 @@
 
                 <div class="hero_video-wrapper">
                     <video autoplay loop muted class="hero_video">
-                        <source src="./src/assets/hero_video.mp4" type="video/mp4">
+                        <source src="./assets/hero_video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -103,13 +103,13 @@
                     
                     data-image-index="${t+1}" 
                     class="supporter_img-container">
-                        <img class="supporter_img" src="./src/assets/icons/s-${t+1}.svg" alt="" />
+                        <img class="supporter_img" src="./assets/icons/s-${t+1}.svg" alt="" />
                     </div>
                 `).join("")}
 
             </div>
         </div>
-`;r(e,o),d("#nav_container")}function p(e){r(e,`
+`;n(e,o),d("#nav_container")}function p(e){n(e,`
 	<div class="service_content">
 		<div class="service_text">
             <h2 class="service_text-header">
@@ -147,7 +147,7 @@
                 </div>
 
                 <div class="service_image">
-                    <img src="./src/assets/images/service_box_1.jpg" alt="" />
+                    <img src="./assets/images/service_box_1.jpg" alt="" />
                 </div>
             </div>
             <div class="service_box">
@@ -166,7 +166,7 @@
                 </div>
 
                 <div class="service_image">
-                    <img src="./src/assets/images/service_box_1.jpg" alt="" />
+                    <img src="./assets/images/service_box_1.jpg" alt="" />
                 </div>
             </div>
         </div>
@@ -211,7 +211,7 @@
         </div>
 
 	</div>
-		`)}function v(e){r(e,`
+		`)}function v(e){n(e,`
 	<div class="showcase_content">
 		<div class="showcase_text">
             <h2 class="showcase_text-header">
@@ -261,7 +261,7 @@
 				<div class="showcase_detail">
 					<div class="showcase_detail-video">
 						<video autoplay loop muted>
-							<source src="./src/assets/showcase.mp4" type="video/mp4">
+							<source src="./assets/showcase.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
 					</div>
@@ -285,17 +285,17 @@
         </div>
         <div class="testimony_wrapper">
            <div class="testimony_box-list">
-		 		 ${[{name:"Roy Vab Rooijen",role:"Graphics Designer",imgUrl:"./src/assets/users/u_1.jpg",message:"The automation from design to code with Specify is incredibly powerful. The ability to reference the same tokens and assets in Figma — and in our codebase — saves us an incredible amount of time, while reducing manual, error-prone work."},{name:"Jane Doe",role:"UI/UX Designer",imgUrl:"./src/assets/users/u_2.jpg",message:"Specify is the missing link between our design and engineering teams. It definitely helped us integrate design tokens in an automated way very quickly and seamlessly into our codebase."},{name:"John Smith",role:"Frontend Developer",imgUrl:"./src/assets/users/u_3.jpg",message:"We sync our design tokens and icons to our tools with Specify, and it gives our design and engineering teams peace of mind!"},{name:"Alice Johnson",role:"Product Manager",imgUrl:"./src/assets/users/u_4.jpg",message:"The automation from design to code with Specify is incredibly powerful. The ability to reference the same tokens and assets in Figma — and in our codebase — saves us an incredible amount of time, while reducing manual, error-prone work."},{name:"Bob Brown",role:"Backend Developer",imgUrl:"./src/assets/users/u_5.jpg",message:"Specify helps our designers keep their assets and design decisions in sync with the actual code, avoiding extra development effort and making design implementation much more flexible."},{name:"Charlie Davis",role:"Full Stack Developer",imgUrl:"./src/assets/users/u_3.jpg",message:"Specify is the perfect addition to our front-end boilerplate. Tokens, assets, fonts: everything comes straight out from Figma. Less configuration, more creative development. Our team loves it!"}].map((o,s)=>g(o,s)).join("")}  
+		 		 ${[{name:"Roy Vab Rooijen",role:"Graphics Designer",imgUrl:"./assets/users/u_1.jpg",message:"The automation from design to code with Specify is incredibly powerful. The ability to reference the same tokens and assets in Figma — and in our codebase — saves us an incredible amount of time, while reducing manual, error-prone work."},{name:"Jane Doe",role:"UI/UX Designer",imgUrl:"./assets/users/u_2.jpg",message:"Specify is the missing link between our design and engineering teams. It definitely helped us integrate design tokens in an automated way very quickly and seamlessly into our codebase."},{name:"John Smith",role:"Frontend Developer",imgUrl:"./assets/users/u_3.jpg",message:"We sync our design tokens and icons to our tools with Specify, and it gives our design and engineering teams peace of mind!"},{name:"Alice Johnson",role:"Product Manager",imgUrl:"./assets/users/u_4.jpg",message:"The automation from design to code with Specify is incredibly powerful. The ability to reference the same tokens and assets in Figma — and in our codebase — saves us an incredible amount of time, while reducing manual, error-prone work."},{name:"Bob Brown",role:"Backend Developer",imgUrl:"./assets/users/u_5.jpg",message:"Specify helps our designers keep their assets and design decisions in sync with the actual code, avoiding extra development effort and making design implementation much more flexible."},{name:"Charlie Davis",role:"Full Stack Developer",imgUrl:"./assets/users/u_3.jpg",message:"Specify is the perfect addition to our front-end boilerplate. Tokens, assets, fonts: everything comes straight out from Figma. Less configuration, more creative development. Our team loves it!"}].map((o,s)=>g(o,s)).join("")}  
 		   </div>
 			  
         </div>
     </div>
-    `;r(e,a)}function g(e,i){return`
+    `;n(e,a)}function g(e,i){return`
         <div style="animation-delay: -${10 .toFixed(0)*i+1}s"  class="testimony_box">
             
 			<div class="testimony_logo">
                 <div class="logo">
-					<img src="./src/assets/icons/s-${i+1}.svg" alt="companies logo" />
+					<img src="./assets/icons/s-${i+1}.svg" alt="companies logo" />
 				</div>
             </div>
 
@@ -314,7 +314,7 @@
                 
             </div>
          </div>
-    `}function h(e){r(e,`
+    `}function h(e){n(e,`
     <div>
         <header class="header"></header>
 
