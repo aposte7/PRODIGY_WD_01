@@ -49,10 +49,10 @@
 
     `)}function u(e){const t=` 
 		<div class="nav_list">
-			${l("Home")}
-			${l("Solution")}
-			${l("Resource")}
-			${l("About")}
+			${l("Home","#")}
+			${l("Solution","#solution")}
+			${l("Service","#service")}
+			${l("About","#about")}
 		</div>`;r(e,t),document.addEventListener("DOMContentLoaded",()=>{const o=document.querySelectorAll(".nav_item");o.forEach(a=>{a.addEventListener("click",function(){o.forEach(s=>s.classList.remove("nav_active")),this.classList.add("nav_active")})})})}function l(e,t="#"){return`
 	<div class="nav_item">
 		<a class="nav_link" href=${t}>
@@ -417,12 +417,12 @@
         <header class="header"></header>
 
     <main class="main">
-        <section class="showcase"></section>
-        <section class="service"></section>
+        <section class="showcase" id="solution"></section>
+        <section class="service" id="service"></section>
         <section class="testimony"></section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer" id="about"></footer>
 
     </div>
 
