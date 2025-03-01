@@ -13,7 +13,12 @@ function Header(parent) {
 
             <div id="nav_container"></div>
             
-            <a href="#" class="nav_link-btn">Sign In</a>
+            <div class="nav_action">
+                <a href="#" class="nav_link-btn btn ">Sign In</a>
+                <button class="menu_btn" data-toggle-menu>
+                    <span class="menu_bar"></span>
+                </button>
+            </div>
         </div>
 
         <div class="hero_wrapper">
